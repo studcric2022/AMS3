@@ -1,0 +1,53 @@
+{% extends "cse/home.html" %}
+
+{% block title %}
+  Login
+{% endblock title %}
+
+{% block content %}
+<style>
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 150px;
+}
+body{
+margin:0;
+padding:0;
+
+    background-image: url(https://wallpaperaccess.com/full/697601.jpg);
+    background-size: cover;
+    background-repeat: cover;
+    background-attachment: fixed;
+
+}
+.container h1 {
+   text-align: center;
+}
+.navbar #login{
+  background-color: white;
+  color: black;
+}
+</style>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="#" method="POST">
+      {% csrf_token %}
+        <div class="form-group">
+            <label for="email">Username</label>
+            <input type="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <div class="button1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <h1 style="font-size: 14px;">Don't Have Account?<a style="color: red;" href="/register">Register</a></h1>
+    </form>
+  </div>
+{% endblock %}

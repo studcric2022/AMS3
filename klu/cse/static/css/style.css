@@ -1,0 +1,93 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom: 150px;
+}
+.container .button1{
+padding: 10px 162px 10px 150px;
+}
+.navbar p {
+    font-size: 18px;
+    margin-left: 16px;
+    color: white;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-align:center;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+ button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ button:hover {
+    background-color: red;
+}
+.navbar img {
+    width: 100px;
+    height: 90px;
+    /* box-shadow: 122px 15px 10px #0d0d0d inset; */
+    filter: drop-shadow(100px 10px 100px yellow);
+    padding: 0px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 60%;
+}

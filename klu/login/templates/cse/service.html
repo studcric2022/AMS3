@@ -1,0 +1,104 @@
+{% extends "cse/home.html" %}
+
+{% block title %}
+  Service
+{% endblock title %}
+
+{% block content %}
+<style>
+      .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom:10px;
+    height:95px;
+    }
+    body{
+        background-image: url(https://images.unsplash.com/photo-1690164919722-f5362e0965a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1856&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    }
+
+  h1{
+    color: red;
+}
+p{
+    margin: 17px 2px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.container{
+    border: 2px solid black;
+    margin: 50px 50px;
+    padding: 52px 3% 44px 32px;
+    background-color: #acacac73;
+
+    justify-content: space-between;
+}
+button{
+    background-color: darkgray;
+    color:black;
+}
+button:hover{
+    background-color: orange;
+    color: green;
+    font-weight: bold;
+}
+.container-fluid{
+    margin: 55px 75px;
+    border: 2px solid black;
+    display:flex;
+    background-color: #b6395626;
+}
+</style>
+<h1 align="center">PLEASE CHECK GIVEN SERVICES</h1>
+    <hr>
+<div class="container-fluid" id="service-box">
+    <div class="container">
+        <div>
+           <p>GEO-FENCING</p>
+        </div>
+        <p>COST=45$</p>
+        <div>
+            <a href="/submit"><button type="submit" style="   margin: 12px 42px;
+                padding: 7px 18px 7px 16px;">APPLY</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+           <p>GEO-FENCING</p>
+        </div>
+        <p>COST=45$</p>
+        <div>
+            <a href="/submit"><button type="submit" style="   margin: 12px 42px;
+                padding: 7px 18px 7px 16px;">APPLY</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+           <p>GEO-FENCING</p>
+        </div>
+        <p>COST=45$</p>
+        <div>
+            <a href="/submit"><button type="submit" style="   margin: 12px 42px;
+                padding: 7px 18px 7px 16px;">APPLY</button></a>
+        </div>
+    </div>
+  <div class="container">
+        <div>
+           <p>GEO-FENCING</p>
+        </div>
+        <p>COST=45$</p>
+        <div>
+            <a href="/submit"><button type="submit" style="   margin: 12px 42px;
+                padding: 7px 18px 7px 16px;">APPLY</button></a>
+        </div>
+    </div>
+
+
+
+{% endblock %}

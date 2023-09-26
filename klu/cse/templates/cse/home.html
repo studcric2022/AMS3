@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+        {% block title %}
+
+        {% endblock %}
+    </title>
+
+</head>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<body>
+    <div class="navbar">
+        <p><img src="{% static 'css/img.png' %}"></p>
+        <div>
+            <a href="/register" id="register">REGISTER</a>
+            <a href="/" id="login">LOGIN</a>
+            <a href="/about" id="about">ABOUT</a>
+            <a href="/home" id="home">HOME</a>
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

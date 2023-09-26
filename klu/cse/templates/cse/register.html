@@ -1,0 +1,65 @@
+{% extends "cse/home.html" %}
+
+{% block title %}
+  Register
+{% endblock title %}
+
+{% block content %}
+<style>
+    body{
+margin:0;
+padding:0;
+
+    background-image: url(https://wallpaperaccess.com/full/697601.jpg);
+    background-size: cover;
+    background-repeat: cover;
+    background-attachment: fixed;
+
+}
+.navbar{
+    margin-bottom: 10px;
+}
+.container h1 {
+    
+    text-align: center;
+}
+.navbar #register{
+  background-color: white;
+  color: black;
+}
+</style>
+  <div class="container" >
+    <h1>Register</h1>
+    <form action="#" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" placeholder="Enter First Name">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" placeholder="Enter Last Name">
+        </div>
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <label>Male</label><input type="radio" name="sex" value="male" required>
+            <label>Female</label><input type="radio" name="sex" value="female" required>
+            
+           
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password">
+        </div>
+        
+        <div class="button1">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+  </div>
+    
+{% endblock content %}
